@@ -30,7 +30,7 @@ However, as thread counts grow, **global locks become bottlenecks** — introduc
 
 ---
 
-## 🧱 Components Used
+## Components Used
 
 | Component                       | Description            | Benefit                                             |
 | ------------------------------- | ---------------------- | --------------------------------------------------- |
@@ -41,9 +41,9 @@ However, as thread counts grow, **global locks become bottlenecks** — introduc
 
 ---
 
-## ⚙️ Setup
+## Setup
 
-### 1️⃣ Install TBB
+###  Install TBB
 
 **Ubuntu / Debian**
 
@@ -66,9 +66,9 @@ target_link_libraries(my_app PRIVATE TBB::tbb)
 
 ---
 
-## 🧠 Example 1: Replacing a Locked Queue
+## Example 1: Replacing a Locked Queue
 
-### 🧱 Before (mutex-protected queue)
+### Before (mutex-protected queue)
 
 ```cpp
 #include <queue>
@@ -122,7 +122,7 @@ void consumer() {
 
 ---
 
-## 🧠 Example 2: Using a Scalable Allocator
+## Example 2: Using a Scalable Allocator
 
 ### Before
 
@@ -146,7 +146,7 @@ std::vector<std::string, tbb::scalable_allocator<std::string>> logs;
 
 ---
 
-## ⚖️ `malloc` vs `tbb::scalable_allocator`
+## `malloc` vs `tbb::scalable_allocator`
 
 | Aspect        | malloc / calloc          | TBB scalable_allocator          |
 | ------------- | ------------------------ | ------------------------------- |
@@ -157,7 +157,7 @@ std::vector<std::string, tbb::scalable_allocator<std::string>> logs;
 
 ---
 
-## 📊 Real-World Performance Results
+## Real-World Performance Results
 
 | Metric                            | Before (mutex-based) | After (TBB concurrent + scalable_allocator) |
 | :-------------------------------- | :------------------- | :------------------------------------------ |
@@ -171,7 +171,7 @@ std::vector<std::string, tbb::scalable_allocator<std::string>> logs;
 
 ---
 
-## 🧩 Conclusion
+## Conclusion
 
 Intel® oneTBB provides a **modern, high-performance C++ foundation** for parallelism — ideal for systems dealing with high data throughput, packet processing, logging, or analytics.
 
@@ -203,3 +203,4 @@ cmake ..
 make
 ./tbb_performance_demo
 ```
+🔴 Provided code is tested on linux
