@@ -1,1 +1,0 @@
-/usr/bin/c++ -O3 -DNDEBUG CMakeFiles/tbb_performance_demo.dir/src/main.cpp.o -o tbb_performance_demo  /usr/lib/x86_64-linux-gnu/libtbb.so.12.11 /usr/lib/x86_64-linux-gnu/libtbbmalloc.so.2.11 
