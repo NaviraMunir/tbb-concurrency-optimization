@@ -1,0 +1,3 @@
+/home/navira-laptop/Documents/Task/TBB/tbb-concurrency-optimization/build/CMakeFiles/tbb_performance_demo.dir
+/home/navira-laptop/Documents/Task/TBB/tbb-concurrency-optimization/build/CMakeFiles/edit_cache.dir
+/home/navira-laptop/Documents/Task/TBB/tbb-concurrency-optimization/build/CMakeFiles/rebuild_cache.dir

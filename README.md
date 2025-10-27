@@ -192,3 +192,14 @@ TBB is primarily a **C++ library**, but its concepts (task graphs, work stealing
 * 💻 [oneTBB GitHub Repository](https://github.com/oneapi-src/oneTBB)
 
 ---
+
+## Run Given Example Code to see performance difference
+
+```bash
+git clone https://github.com/NaviraMunir/tbb-concurrency-optimization.git
+cd tbb-performance-demo
+mkdir build && cd build
+cmake ..
+make
+./tbb_performance_demo
+```
